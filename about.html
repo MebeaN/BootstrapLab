@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoe Sale</title>
     <link rel="stylesheet" href="./assets/js/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.csss">
     <script src="./assets/js/jquery-3.1.1.slim.min.js"></script>
     <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"> 
+    <style>
+        img{
+            border-radius: 50%;
+            height: 10rem;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">  
@@ -25,10 +30,10 @@
             <ul class="navbar-nav d-flex align-items-end flex-col">
 
                 <li class="nav-item">
-                <a class="nav-link" href="services.html">Service</a>
+                    <a class="nav-link" href="services.html">Service</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link active" href="about.html" >About</a>
                 </li>
                         
             </ul>
@@ -53,10 +58,17 @@
     <hr>
     <div class="container">
 
-        <div class="row mb-5">
+        <div class="row mb-5 ml-5">
             <div class="col-md-4">
+                <img src="./assets/images/shoe1.jpg" alt="">
             </div>
             <div class="col-md-4">
+                <h3>Our Products</h3>
+                <li>Male's sport shoes</li>
+                <li>Male's leather shoes</li>
+                <li>Female's normal shoes</li>
+                <li>Female's heel shoes</li>
+                <li>Others</li>
             </div>
             <div class="col-md-4 d-none d-xl-block">
                 <h3>FAQ</h3>
@@ -64,11 +76,11 @@
                     <div class="card">
                         <div class="card-header" id="headingOne">
                             <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">kjdfhckhhvaskjhfd</button>
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Our Experience</button>
                             </h2>
                         </div> 
 
-                        <div id="collapseOne" class="collapse show"  aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fugit nisi exercitationem expedita in? Ea consequatur aspernatur quisquam pariatur maiores rerum rem, est cupiditate tenetur, debitis fuga, commodi voluptas deserunt?
                             </div>
@@ -76,11 +88,11 @@
 
                         <div class="card-header" id="headingTwo">
                             <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">kjdfhckhhvaskjhfd</button>
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Our Mission</button>
                             </h2>
                         </div> 
 
-                        <div id="collapseTwo" class="collapse show"  aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div id="collapseTwo" class="collapse"  aria-labelledby="headingTwo" data-parent="#accordionExample">
                             <div class="card-body">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fugit nisi exercitationem expedita in? Ea consequatur aspernatur quisquam pariatur maiores rerum rem, est cupiditate tenetur, debitis fuga, commodi voluptas deserunt?
                             </div>
@@ -95,34 +107,34 @@
         <hr>
 
         <div class="row text-center">
-            <div class="col-md-4">
+            <div class="col-md-4 mb-5">
                 <img src="./assets/images/200+.PNG" alt="">
-                <p>Clients</p>
+                <h3>Clients</h3>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-5">
                 <img src="./assets/images/20+.PNG" alt="">
-                <p>Work Experience</p>
+                <h3>Work Experience</h3>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-5">
                 <img src="./assets/images/50+.PNG" alt="">
-                <p>Permanent Workers</p>
+                <h3>Permanent Workers</h3>
             </div>
         </div>
         
         <h1>Our Team</h1>
         <hr>
         <div class="row text-center">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-5">
                     <img src="./assets/images/Manager.jpg" alt="">
-                    <p>The Manager</p>
+                    <h3>The Manager</h3>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-5">
                     <img src="./assets/images/Workers.png" alt="">
-                    <p>The Workers</p>
+                    <h3>The Workers</h3>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-5">
                     <img src="./assets/images/Workshop.jpg"  alt="">
-                    <p>Our Workshop</p>
+                    <h3>Our Workshop</h3>
                 </div>
         </div>
 
@@ -157,8 +169,10 @@
 
             <div class="col-md-6">
                 <div id="map-container-google-1" class="z-depth-1-half map-container" style="width:100%">
-                    <iframe src="https://maps.google.com/maps?q=ethiopia&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://maps.google.com/maps?q=ethiopia&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="width: 100%; height: 20rem;" allowfullscreen></iframe>
                 </div>
+                <br>
+                <Address>5 Kilo in front of National Museum, Addis Ababa, Ethiopia.</Address>
             </div>
             
         </div>
@@ -171,8 +185,8 @@
             <div class="col-md mt-5">
                 <h3>Heading</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ipsam corrupti id repellendus animi illum blanditiis quisquam error. </p>
-                <a href="https://www.facebook.com" target="blank"><i class="fa fa-facebook-square"></i></a>
-                <a href="https://www.linkedin.com" target="blank" style="margin-left: 3px;"><i class="fa fa-linkedin"></i></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://www.linkedin.com" target="_blank" style="margin-left: 3px;"><i class="fa fa-linkedin"></i></i></a>
             </div>
 
             <div class="col-md mt-5">
@@ -191,7 +205,7 @@
                 <h3>Location</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p><br>
                 <i class="fa fa-phone" style="margin-right: 1rem;"></i>(541) 754-3010<br>
-                <i class="fa fa-envelope-square"></i><a href="https://www.gmail.com" target="blank" style="margin-left: 1rem;">info@hsdf.com</a> 
+                <i class="fa fa-envelope-square"></i><a href="https://www.gmail.com" target="_blank" style="margin-left: 1rem;">info@hsdf.com</a> 
             </div>
         </div>
         <div class="row ml-5">
@@ -200,9 +214,5 @@
             </div>
         </div>
     </div>
-    
-
-    <script src="./assets/js/bootstrap.js"></script>
-    <script src="./assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>
